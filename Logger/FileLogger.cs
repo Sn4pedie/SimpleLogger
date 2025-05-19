@@ -82,9 +82,9 @@ namespace SimpleLogger.Logger
         /// Schreibt einen formatierten Logeintrag in die Logdatei.
         /// </summary>
         /// <param name="logEntry">Der zu schreibende Logeintrag im bereits formatierten Textformat.</param>
-        public virtual void WriteLog(string logEntry)
+        private void WriteLog(string logEntry)
         {
-            if (logEntry == String.Empty) return;
+            if (String.IsNullOrEmpty(logEntry)) return;
 
             lock (lockObj)
             {

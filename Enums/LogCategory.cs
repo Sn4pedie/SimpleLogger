@@ -18,12 +18,12 @@
         /// <summary>
         /// Log-Nachricht, die sich auf Netzwerkoperationen bezieht.
         /// </summary>
-        Netzwerk,
+        Network,
 
         /// <summary>
         /// Log-Nachricht im Kontext von Datenbankoperationen.
         /// </summary>
-        Datenbank,
+        Database,
 
         /// <summary>
         /// Log-Nachricht, die sich auf Benutzeroberflächen-Ereignisse oder Fehler bezieht.

@@ -48,7 +48,7 @@ namespace SimpleLogger.Logger
         /// <param name="level">Der Schweregrad, anhand dessen bei farbiger Ausgabe die <see cref="Console.ForegroundColor"/> gesetzt wird. </param>
         private void WriteLog(string logEntry, LogLevel level)
         {
-            if (logEntry == null) return;
+            if (String.IsNullOrEmpty(logEntry)) return;
 
             try
             {
