@@ -45,7 +45,8 @@ namespace SimpleLogger.Core
             }
             else
             {
-                string categoryString = logEntry.Category != LogCategory.None ? logEntry.Category.ToString() : logEntry.CustomCategory;
+                string categoryString = String.IsNullOrEmpty(logEntry.CustomCategory) ?
+                    (logEntry.Category == LogCategory.None ? LogCategory.General.ToString() : logEntry.Category.ToString()) : logEntry.CustomCategory;
                 string timeStamp = DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
                 string levelText = logEntry.Level.ToString().PadLeft(5);
                 return $"[{timeStamp}] [{levelText}] [{categoryString}] {logEntry.Message}";
