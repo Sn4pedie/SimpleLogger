@@ -1,20 +1,20 @@
 # SimpleLogger
 
-SimpleLogger ist eine flexible und einfach nutzbare Logging-Bibliothek für .NET-Anwendungen. Sie unterstützt das Schreiben von Logeinträgen in Dateien (Text oder JSON), die Konsolenausgabe sowie asynchrones Logging mit Warteschlangenverarbeitung. Die Konfiguration ist flexibel und unterstützt u.a. Rolling Logs und verschiedene Log-Level.
+SimpleLogger ist eine flexible und einfach nutzbare Logging-Bibliothek fÃ¼r .NET-Anwendungen. Sie unterstÃ¼tzt das Schreiben von LogeintrÃ¤gen in Dateien (Text oder JSON), die Konsolenausgabe sowie asynchrones Logging mit Warteschlangenverarbeitung. Die Konfiguration ist flexibel und unterstÃ¼tzt u.a. Rolling Logs und verschiedene Log-Level.
 
 ## Features
 
-- Logging in Dateien (Text & JSON)
+- Logging in Dateien (Text & NDJSON)
 - Asynchrones Logging (Hintergrundverarbeitung)
-- Rolling Logfiles (tägliche Dateien)
+- Rolling Logfiles (tÃ¤gliche Dateien)
 - Log-Level & Kategorien
-- Konfiguration über Code
+- Konfiguration Ã¼ber Code
 - Konsolen-Logger enthalten
 - Einfache Erweiterbarkeit
 
 ## Installation
 
-Füge das Projekt SimpleLogger zu deiner Solution hinzu oder kopiere die relevanten Dateien in dein Projekt.
+FÃ¼ge das Projekt SimpleLogger zu deiner Solution hinzu oder kopiere die relevanten Dateien in dein Projekt.
 
 > **Voraussetzungen:**  
 > .NET Core oder .NET Framework, je nach Projektstruktur.
@@ -58,15 +58,15 @@ Die wichtigsten Einstellungen findest du in `LoggerConfig`:
 
 - **LogDirectory**: Speicherort der Logdateien
 - **LogFileName**: Basisname der Logdateien
-- **LogFileFormatJson**: Logeinträge als JSON speichern (`true`) oder als Text (`false`)
+- **LogFileFormatJson**: LogeintrÃ¤ge als NDJSON speichern (`true`) oder als Text (`false`)
 - **MinimumLogLevel**: Minimales Log-Level (z.B. Info, Warn, Error)
 - **EnableRollingLog**: Neue Logdatei pro Tag
-- **OverwriteOnStart**: Überschreibt bestehende Logdatei beim Start
+- **OverwriteOnStart**: Ãœberschreibt bestehende Logdatei beim Start
 
 ## Logger-Typen
 
 - **FileLogger**: Schreibt synchron in eine Datei
-- **FileLoggerAsync**: Schreibt asynchron (empfohlen für hohe Log-Frequenz)
+- **FileLoggerAsync**: Schreibt asynchron (empfohlen fÃ¼r hohe Log-Frequenz)
 - **ConsoleLogger**: Gibt Logs auf der Konsole aus
 
 ## Lizenz
@@ -75,7 +75,7 @@ Dieses Projekt steht unter der MIT-Lizenz.
 
 ## Beitrag
 
-Pull Requests sind willkommen! Bitte öffne ein Issue für Vorschläge oder Fehler.
+Pull Requests sind willkommen! Bitte Ã¶ffne ein Issue fÃ¼r VorschlÃ¤ge oder Fehler.
 
 ---
 
